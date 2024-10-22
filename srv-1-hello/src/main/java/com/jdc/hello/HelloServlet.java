@@ -10,14 +10,16 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet(urlPatterns = "/hello")
 public class HelloServlet extends HttpServlet {
+	
 	private static final long serialVersionUID = 1L;
        
-    public HelloServlet() {
-        super();
-    }
-
+    @Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().append("Hello From Servlet").flush();;
+		response.getWriter()
+		.append("<h1>")
+		.append("Hello From Servlet")
+		.append("</h1>")
+		.flush();
 	}
 
 	
