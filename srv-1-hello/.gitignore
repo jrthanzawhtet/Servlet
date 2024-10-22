@@ -1,0 +1,14 @@
+.project
+.classpath
+.settings/
+
+*.class
+
+*.swp
+
+*.log
+
+target/
+
+.DS_Store
+Thumbs.db
